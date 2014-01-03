@@ -43,7 +43,7 @@ for ($i=0; $i<$res; $i++){
 	echo $jarr['repositories'][$i]['url'] . "<br />";
 	echo $jarr['repositories'][$i]['username'] . "<br />";
 	echo $jarr['repositories'][$i]['description'] . "<br />";
-	echo "</blockquote> <hr> ";
+	echo "</blockquote> <hr width="70%" size="1px">  ";
 }
 }
 if (isset($_POST['lang'])){
