@@ -39,10 +39,10 @@ curl_close($ch);
 $jarr = json_decode($resp,1);
 for ($i=0; $i<$res; $i++){
 	echo "<blockquote>";
-	echo "<h2> Project title:" . $jarr['repositories'][$i]['description'] . "<br />" . "</h2>";
+	echo "<h2> Project title:" . $jarr['repositories'][$i]['name'] . "<br />" . "</h2>";
 	echo $jarr['repositories'][$i]['url'] . "<br />";
 	echo $jarr['repositories'][$i]['username'] . "<br />";
-	echo "</blockquote> <hr width="70%" size="1px">  ";
+	echo "</blockquote> <hr width='70%' size='1px'>  ";
 }
 }
 if (isset($_POST['lang'])){
