@@ -49,22 +49,23 @@
 .grey {
     color: #cccfd2;
 }
+.left {
+    float: left;
+    margin-left: 130px;
+}
+.footer {
+    float: left;
+}
 
 </style>
 </head>
 <body>
-    <center>
-	<div class="pure-menu pure-menu-open pure-menu-horizontal">
-	    <ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Contact</a><li>
-	    </ul>
-	</div>
-    </center>
-
 <div class="wrapper left-side">
     <form class="pure-form pure-form-aligned cell" method="post" action="">
+
+<img class="left" src="Octocat.png" height="200" width="250">
     <fieldset class="right">
+
 	<div class="pure-control-group">
 		<label for="language"><h2 class="content-subhead"></h2></label>
 		<input type="text" size="18" name="lang" placeholder="Programming Language" required>
@@ -102,6 +103,9 @@ for ($i=0; $i<$res; $i++){
 }
 if (isset($_POST['lang'])){
 	data_p();
+}
+else {
+	echo '<blockquote><div class="entry"> <span class="grey"><h1>Search some <b>Repositories</b></h1></span></div>';
 }
 ?>
 </div>
