@@ -53,10 +53,6 @@
     float: left;
     margin-left: 130px;
 }
-.footer {
-    float: left;
-}
-
 </style>
 </head>
 <body>
